@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Praticando JS - Exerc 1</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <br>
+        <center><button type="button" class="btn btn-outline-primary"><a href="exerc2.html" target="_blank">Exercício Dois</a></button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-outline-primary"><a href="exerc3.html" target="_blank">Exercício Três</a></button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-outline-primary"><a href="exerc4.html" target="_blank">Exercício Quatro</a></button>
+        </center>
+        <br>
+        <br>
+        <center><table border='1'>
+            <tr>
+                <td>
+                    <script type="text/javascript">
+                    // Criar um programa que leia um inteiro pelo prompt e imprima a 
+                    // tabuada de um número inteiro no corpo da página.
+        
+            var num = parseInt(
+                prompt("De qual número gostaria de saber a tabuada ?")
+                );
+            document.write("<center><h2>Tabuada <br></h2></center>");
+                for(var i = 1; i <= 10; i++){
+                    document.write(
+                        "<h2> "+ num + " x " + i + " = " + (num * i) + "<br></h2>"
+                    );
+                } 
+                    </script>
+                </td>
+            </tr>
+        </table></center>
+        
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Praticando JS - Exerc 4</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <br>
+        <center>
+            <button type="button" class="btn btn-outline-primary"><a href="index.html">Home</a></button>&nbsp;&nbsp;
+            <button type="button" class="btn btn-outline-primary"><a href="exerc2.html" target="_blank">Exercício Dois</a></button>&nbsp;&nbsp;
+            <button type="button" class="btn btn-outline-primary"><a href="exerc3.html" target="_blank">Exercício Três</a></button>
+        </center>
+        <br>
+        <br>
+        <center><table border='1'>
+            <tr>
+                <td>
+                    <script type="text/javascript">
+                    // Criar uma página que permita ler um número inteiro via prompt que corresponda
+                    // a uma base e um outro número que corresponda ao seu expoente. Apresentar no
+                    // corpo do documento o resultado da potência;
+        
+                    var base = parseInt(
+                        prompt("Insira o valor de sua base:")
+                        );
+                    var expo = parseInt(
+                        prompt("Insira o valor de seu expoente:")
+                        );
+                    var i = 1, pot = 1;
+                    document.write("<center><h2>Potência <br><br></h2></center>");
+                        do{
+                            pot = pot*base;
+                            i++
+                        }while (i<=expo);
+                        document.write("<center><h3>"+base+" elevado a "+expo+" é = "+pot+"</h3></center><br>")
+                    </script>
+                </td>
+            </tr>
+        </table></center>
+    </body>
+</html>

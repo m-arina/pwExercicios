@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Praticando JS - Exerc 2</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <br>
+        <center>
+            <button type="button" class="btn btn-outline-primary"><a href="index.html">Home</a></button>&nbsp;&nbsp;
+            <button type="button" class="btn btn-outline-primary"><a href="exerc3.html" target="_blank">Exercício Três</a></button>
+        </center>
+        <br>
+        <br>
+        <center><table border='1'>
+            <tr>
+                <td>
+                    <script type="text/javascript">
+                    // Criar uma página que leia um número N pelo prompt apresente 
+                    // no corpo da página (documento) a série de Fibonacci até o enésimo termo:
+        
+                    var n = parseInt(
+                    prompt("Insira o número de termos que deseja:")
+                    );
+                    var i = 1, ant = 0, atual = 1, prox;
+                    document.write("<center><h2>Série de Fibonacci <br><br></h2></center>");
+                        do{
+                            prox = ant + atual;
+			                ant = atual;
+                            document.write("<center><h3>A série de Fibonacci até o "+n+"º termo é: <b>"+atual+"</b></h3></center><br>")
+                            atual = prox;
+                            i++
+                        }while (i<=n);
+                    </script>
+                </td>
+            </tr>
+        </table></center>
+    </body>
+</html>
